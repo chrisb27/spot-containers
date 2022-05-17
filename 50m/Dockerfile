@@ -20,4 +20,3 @@ COPY faster_rcnn_inception_v2_coco_2018_01_28 /app/
 WORKDIR /app
 
 ENTRYPOINT ["/usr/bin/python3", "/app/spot_detect_and_follow.py", "--model-path", "/app/frozen_inference_graph.pb", "--detection-class", "1","--sleep-between-capture", "0.05",  "192.168.80.3"]
-#  ["/usr/bin/python3", "/app/spot_detect_and_follow.py --model-path /app/frozen_inference_graph.pb --detection-class 1 192.168.80.3"]
